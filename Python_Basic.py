@@ -6,10 +6,8 @@ def color():
     if os.name == "nt":
         os.system("color 0a")
     else:
-        import colorama
-        
-        Green = colorama.Fore.GREEN
-        reset = colorama.Style.RESET_ALL
+        green = "\033[32m"
+        print(green)
         
 color()
 def limpiar():
