@@ -1,4 +1,5 @@
 import os
+from time import sleep
 
 
 #verificar si es linux o windows
@@ -63,9 +64,9 @@ while True:
     25. __name___ y '__main__'
     26. Manejo de errores y excepciones
     27. ACERCA DEL CREADOR DE ESTE PROGRAMA 
-    \n
-    ELIGE EL TEMA QUE QUIERAS!!\n""")
-    opcion = input("Elige el número con el tema que quieres trabajar\n--->")
+    99. SALIR
+    \n\n""")
+    opcion = input("ELIGA EL TEMA-> ")
     limpiar()
 
     #OPCIONES DEL 1
@@ -74,7 +75,7 @@ while True:
         Python es un lenguaje de programación multiparadigma en el\ncual puedes desarrollar todo tipo de programa que quieras,\npuedes desarrollar paginas web, interfaces graficas,\nhacking etico y muchas cosas mas,si te interesa el tema\nquedate aquí y sigue navegando en el programa,hay muchos\ntemas!!  
         \n """)
         
-    if opcion =="2":
+    elif opcion =="2":
         print("""                       ESTRUCTURA DE DATOS\n\n 
         NOMBRE                 TIPO          DESCRIPCION\n 
         Enteros                Int           3 500 50000\n   
@@ -88,7 +89,7 @@ while True:
          
 
 
-    if opcion =="3":
+    elif opcion =="3":
         print("""                          NUMEROS EN PYTHON\n 
         Enteros-(Int)\n 
         a=4+4 
@@ -103,7 +104,7 @@ while True:
         resultado: 9.05999... 
         \n """)
          
-    if opcion =="4":
+    elif opcion =="4":
         print("""                 Operaciones matemáticas simples\n".upper())
             Podemos hacer restas, sumas, multiplicacion y division de la siguiente manera:\n 
             RESTAS (-)\n 
@@ -124,7 +125,7 @@ while True:
             resultado: 2\n\n""")
          
 
-    if opcion=="5":
+    elif opcion=="5":
         print("""               OPERACIONES MATEMATICAS AVANZADAS 
             MODULUS\n 
             Modulus lo que hace es retornar la sobra de la division, ver si el numero es divisible, o si es par o impar para\nello utilizamos este signo(%)\n 
@@ -162,7 +163,7 @@ while True:
             resultado: 168\n\n""") 
          
             
-    if opcion =="6":
+    elif opcion =="6":
         print("""                     VARIABLES 
         Acabamos de trabajar con numeros,pero es dificil saber que\nrepresentan estos numeros si no les asignamos una variable.\n 
         Seria bueno asignar a estos tipos de datos un nombre para\npoder reconocerlos.\n\n 
@@ -179,7 +180,7 @@ while True:
         Esto es correcto en python!!\n """)
          
         
-    if opcion =="7":
+    elif opcion =="7":
         print("""                    CADENAS DE TEXTO  \n 
         Las cadenas de texto son secuencias de caracter,\nusan sintaxis con comillas simples o comillas dobles\n 
         [] 'Hola'\n 
@@ -203,7 +204,7 @@ while True:
         resultado: Hola\n\n """)
          
         
-    if opcion =="8":
+    elif opcion =="8":
         print("""                              LISTAS \n 
             Las listas son secuencias ordenadas que guardan una variedad de tipos de datos 
             Usan [] braquets y comas para separar objetos en una lista:\n 
@@ -215,7 +216,7 @@ while True:
             resultado: [1,2,3]\n\n """)
          
 
-    if opcion =="9":
+    elif opcion =="9":
         print("""                          DICCIONARIOS\n  
             [] Son mapeos desordenados para guaradar objetos\n 
             [] Previamente vimos como las listas guardan objetos en una secuencia ordenada\n 
@@ -234,7 +235,7 @@ while True:
             resultado: valor1\n\n """)
          
     
-    if opcion =="10":
+    elif opcion =="10":
         print("""                        TUPLAS\n 
         Las tuplas son similares a las listas.Sin embargo, tienen\nuna diferencia (inmutabilidad)\n 
         Una vez que un elemento se encuentra en una tupla, este no\npuede ser re-asignado.\n 
@@ -245,7 +246,7 @@ while True:
         Esto dará un error ya que las tuplas no se pueden re-asignar\n """)
          
         
-    if opcion =="11":
+    elif opcion =="11":
         print("""                            SETS\n 
         Los sets son una coleccion unica y deaordenada de elementos.\n 
         Solamente puede haber UNA representacion del mismo objeto.\n\n 
@@ -256,7 +257,7 @@ while True:
         resultado: {1,2}\n """)
          
         
-    if opcion =="12":
+    elif opcion =="12":
         print("""                       BOOLEANOS\n 
         Los booleanos son valores que permiten declarar verdadero o falso.\n 
         Son muy importantes cuando quieres hacer logicas.\n 
@@ -276,7 +277,7 @@ while True:
         != No son iguales (a!=b) Verdadero, (a!=a) Falso\n\n """)
          
         
-    if opcion =="13":
+    elif opcion =="13":
         print("""        ENCADENANDO COMPARADORES DE OPERACION\n 
         Podemos usar operadores logicos para combinar comparaciones:\n 
         [] And\n 
@@ -292,7 +293,7 @@ while True:
         True\n\n """)
          
         
-    if opcion =="14":
+    elif opcion =="14":
         print("""            CONDICIONALES IF, ELIF, ELSE\n 
         Usamos las declaraciones para controlar el flujo de nuestro programa\n 
         Usualmente solo queremos que ciero código sea ejecutado\ncuando una condicion particular ocurra.\n 
@@ -327,7 +328,7 @@ while True:
         si fuera false, el resultado seria No estamos aprendiendo\n\n """)
          
         
-    if opcion =="15":
+    elif opcion =="15":
         print("""                        CICLOS FOR\n 
         Varios objetos en python son 'iterables', significa que podemos iterar sobre cada elemento en el objeto\n 
         Podemos iterar a travez de una lista o todos los caracteres en una cadena de texto\n 
@@ -349,7 +350,7 @@ while True:
         hola\nhola\nhola\nhola\nhola\nhola\nhola\nhola\nhola\nhola\n\n """)
          
         
-    if opcion =="16":
+    elif opcion =="16":
         print("""                    CICLOS WHILE\n\n 
         Los ciclos while van a continuar ejecutando un bloque\nde codigo. While (mientras) una condicion siga siendo\nverdadera\n\n 
         Sintaxis para ciclo while:\n 
@@ -368,7 +369,7 @@ while True:
         resultado: El valor de x es 0\nEl valor de x es 1\nEl valor de x es 2\nEl valor de x es 3\nEl valor de x es 4\nEl valor de x es 5\n\n """)
          
         
-    if opcion == "17":
+    elif opcion == "17":
         print("""                USANDO WHILE Y ELSE\n\n 
         x = 0 
         while x < 5: 
@@ -378,7 +379,7 @@ while True:
         resultado: El valor de x es 0\nEl valor de x es 1\nEl valor de x es 2\nEl valor de x es 3\nEl valor de x es 4\nEl valor de x es 5\nEl ciclo terminó!!\n\n """)
          
         
-    if opcion =="18":
+    elif opcion =="18":
         print("""                 PALABRAS CLAVE UTILES (EXTRA)\n\n 
         pass: Sirve para pasar de un problema o para saltar\nel problema\n 
         Ejemplo:\n 
@@ -410,7 +411,7 @@ while True:
         Como ves se detiene en la letra t\n\n """)
          
         
-    if opcion =="19":
+    elif opcion =="19":
         print("""                   OPERADORES UTILES (EXTRA)\n\n 
         range: Sirve para colocar un rango a los numeros o palabras que queramos\n 
         Ejemplo:\n 
@@ -428,7 +429,7 @@ while True:
         10\n\n """)
          
         
-    if opcion =="20":
+    elif opcion =="20":
         print("""                COMPREHENSION DE LISTAS\n\n 
         Manera unica de crear una lista de python rapidamente\n 
         Si te encuentras usando un ciclo for con .append() para\ncrear una lista, puedes usar una comprehension de lista en\nsu lugar\n\n 
@@ -447,7 +448,7 @@ while True:
         Mucho mas rapido!!\n\n """)
          
         
-    if opcion =="21":
+    elif opcion =="21":
         print("""                            FUNCIONES\n\n 
         Las funciones sirven para crear codigo limpio,ordenado y\nrepetible es muy importante para nosotros ser efectivos\nprogramando\n 
         Las funciones son un gran salto en tu carrera como\nprogramador python.\n 
@@ -471,7 +472,7 @@ while True:
         resultado:\n\nHola\nComo\nEstas\n\n """)
          
         
-    if opcion =="22":
+    elif opcion =="22":
         print("""          EXPRESIONES LAMBDA,MAPAS Y FILTROS\n\n 
     Mapas: La funcion de mapa es muy utiñ cuando quieres llenar una funcion con una lidta de datos.\n 
     Ejemplo:\n 
@@ -500,7 +501,7 @@ while True:
     resultado:\n25\n\n """)
      
     
-    if opcion =="23":
+    elif opcion =="23":
         print("""            PROGRAMACION ORIENTADA A OBJETOS\n\n 
     [] Permite a los programadores crear sus propios objetos que tienen metodos y atributos.\n 
     [] Podemos llamar distintos metodos que se encuentran en una clase.\n 
@@ -540,7 +541,7 @@ while True:
     ANIMAL CREADO\nPerro Creado\nSoy un perro\n\n """)
          
     
-    if opcion =="24":
+    elif opcion =="24":
         print("""              MODULOS Y PAQUETES\n\n 
         Modulos: Son simples archivos .py que llamamos desde otro\narchivo.\n 
         Paquetes: Son una coleccion de modulos\n 
@@ -552,7 +553,7 @@ while True:
         resultado:\nANIMAL CREADO\nPerro Creado\nSoy un perro\n\n """)
          
         
-    if opcion =="25":
+    elif opcion =="25":
         print("""               __NAME___ Y '__MAIN__'\n\n 
         Cuando corremos codigo avanzado descargado del internet\nmuchas veces vemos esta linea de codigo en la parte de\nabajo.\n\n 
         if __name__=='__main___':\n 
@@ -583,7 +584,7 @@ while True:
         Dos.py está siendo corrido directamente!!\n\n """)
          
     
-    if opcion =="26":
+    elif opcion =="26":
         print("""               MANEJO DE ERRORES Y EXCEPCIONES\n\n 
         Podemos usar manejo de errores para poder planear posibles\ncasos de uso donde ocurra un error.\n 
         Usamos palabras claves:\n 
@@ -598,9 +599,15 @@ while True:
         resultado:\nParece que hay un erro, escribe correctamente las variables.\n\n """)
          
         
-    if opcion=="27":
+    elif opcion=="27":
         info_contacto()
+    
+    elif opcion=="99":
+        limpiar()
+        print("HASTA LA PROXIMA")
+        sleep(2)
+        exit()
          
 
-    if opcion == "":
+    elif opcion == "":
         print("El tema que intentas buscar no se encuentra en el glosario!!\n\n")
