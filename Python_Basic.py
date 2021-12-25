@@ -1,7 +1,17 @@
 import os
 
-os.system("color 0a")
+
 #verificar si es linux o windows
+def color():
+    if os.name == "nt":
+        os.system("color 0a")
+    else:
+        import colorama
+        
+        Green = colorama.Fore.GREEN
+        reset = colorama.Style.RESET_ALL
+        
+color()
 def limpiar():
     if os.name == "nt":
         os.system("cls")
